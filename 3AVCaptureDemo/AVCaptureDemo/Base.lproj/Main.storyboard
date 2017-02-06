@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXY-wY-3mq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCk-2I-yJg">
+                                        <rect key="frame" x="310" y="24" width="57" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="GZx-b2-7Cj"/>
+                                            <constraint firstAttribute="width" constant="57" id="TMw-wD-SqD"/>
+                                        </constraints>
+                                        <state key="normal" image="btn_video_flip_camera"/>
+                                        <connections>
+                                            <action selector="toggleButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rPr-gR-zAg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="RL1-bk-x6d"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZCk-2I-yJg" secondAttribute="bottom" constant="8" id="xwP-T4-KJK"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZCk-2I-yJg" secondAttribute="trailing" constant="8" id="yCo-ZN-8gz"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YR1-bB-3W6">
+                                <rect key="frame" x="0.0" y="64" width="375" height="493"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera_focus_red" translatesAutoresizingMaskIntoConstraints="NO" id="XIi-6i-Q7h">
+                                        <rect key="frame" x="36" y="45" width="96" height="87"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="camera_focus_red" translatesAutoresizingMaskIntoConstraints="NO" id="Jgb-JU-Kcy">
+                                <rect key="frame" x="10" y="74" width="96" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_tabBar_bg" translatesAutoresizingMaskIntoConstraints="NO" id="TyW-jW-dWl">
+                                <rect key="frame" x="0.0" y="559" width="375" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="bgk-2v-rpy"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nGL-Kr-CwC">
+                                <rect key="frame" x="151" y="577" width="73" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="73" id="yl1-r8-2ev"/>
+                                </constraints>
+                                <state key="normal" image="icon_facial_btn_take" backgroundImage="sc_btn_take">
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takeButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rxd-es-ZTJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m7T-Ei-fTr">
+                                <rect key="frame" x="59" y="583" width="67" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="gJZ-dc-Bis"/>
+                                    <constraint firstAttribute="height" constant="62" id="qHa-wk-xvO"/>
+                                </constraints>
+                                <state key="normal" image="btn_cancel_a"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWk-sZ-U8c">
+                                <rect key="frame" x="248" y="583" width="67" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="P4w-R0-lg4"/>
+                                    <constraint firstAttribute="width" constant="67" id="Ruv-vQ-PWr"/>
+                                </constraints>
+                                <state key="normal" image="btn_camera_done_a"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lXY-wY-3mq" secondAttribute="trailing" id="7ou-0I-H9Q"/>
+                            <constraint firstItem="TyW-jW-dWl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="AEo-DL-3WK"/>
+                            <constraint firstItem="nGL-Kr-CwC" firstAttribute="top" secondItem="YR1-bB-3W6" secondAttribute="bottom" constant="20" id="C9U-eX-9MZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nGL-Kr-CwC" secondAttribute="bottom" constant="17" id="EaA-yk-qf8"/>
+                            <constraint firstItem="nGL-Kr-CwC" firstAttribute="leading" secondItem="m7T-Ei-fTr" secondAttribute="trailing" constant="25" id="FiX-0i-qNi"/>
+                            <constraint firstItem="TyW-jW-dWl" firstAttribute="top" secondItem="YR1-bB-3W6" secondAttribute="bottom" constant="2" id="HdD-kO-avt"/>
+                            <constraint firstItem="hWk-sZ-U8c" firstAttribute="leading" secondItem="nGL-Kr-CwC" secondAttribute="trailing" constant="24" id="JSJ-JS-Tkq"/>
+                            <constraint firstItem="YR1-bB-3W6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lea-bm-T68"/>
+                            <constraint firstAttribute="trailing" secondItem="YR1-bB-3W6" secondAttribute="trailing" id="QWf-Mt-IbS"/>
+                            <constraint firstItem="lXY-wY-3mq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RCa-Og-Ko3"/>
+                            <constraint firstItem="hWk-sZ-U8c" firstAttribute="leading" secondItem="nGL-Kr-CwC" secondAttribute="trailing" constant="24" id="U3G-X6-1t0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hWk-sZ-U8c" secondAttribute="bottom" constant="22" id="bak-Xw-LzI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TyW-jW-dWl" secondAttribute="bottom" id="cb4-ND-sjk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="m7T-Ei-fTr" secondAttribute="bottom" constant="22" id="d0C-Im-fDD"/>
+                            <constraint firstAttribute="trailing" secondItem="TyW-jW-dWl" secondAttribute="trailing" id="eSO-Eu-VA4"/>
+                            <constraint firstItem="nGL-Kr-CwC" firstAttribute="leading" secondItem="m7T-Ei-fTr" secondAttribute="trailing" constant="25" id="eUC-1j-8VK"/>
+                            <constraint firstItem="nGL-Kr-CwC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iCt-vW-Rrb"/>
+                            <constraint firstItem="YR1-bB-3W6" firstAttribute="top" secondItem="lXY-wY-3mq" secondAttribute="bottom" id="ttS-AM-rKQ"/>
+                            <constraint firstItem="lXY-wY-3mq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="yw7-LW-M4Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="focusCursor" destination="Jgb-JU-Kcy" id="CWY-Vh-Zjk"/>
+                        <outlet property="takeButton" destination="nGL-Kr-CwC" id="7Nb-cc-a0H"/>
+                        <outlet property="viewContainer" destination="YR1-bB-3W6" id="m9M-Dq-Uli"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_camera_done_a" width="50" height="50"/>
+        <image name="btn_cancel_a" width="29" height="29"/>
+        <image name="btn_tabBar_bg" width="20" height="20"/>
+        <image name="btn_video_flip_camera" width="37" height="37"/>
+        <image name="camera_focus_red" width="75" height="75"/>
+        <image name="icon_facial_btn_take" width="31" height="31"/>
+        <image name="sc_btn_take" width="73" height="73"/>
+    </resources>
+</document>
